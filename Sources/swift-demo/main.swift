@@ -44,6 +44,7 @@ print("-- Optionals --\n")
 // Closures
 print("\n-- Closures --")
 func aTest(str: String, callback: (Int, Int) -> Int) {
+    print("str: \(str)")
      let result = callback(4, 4)
      print("Result from callback closure: \(result)")
 }
