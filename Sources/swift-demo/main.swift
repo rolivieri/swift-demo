@@ -12,10 +12,9 @@ print("-- Type inference --\n")
 print("\n-- Tuples --")
 let aTuple = (firstName: "John", lastName: "Doe")     
 print("aTuple: \(aTuple)")
-let name = aTuple.firstName
-print("name: \(name)")
+firstName = aTuple.firstName
+print("Tuple.firstName: \(firstName)")
 let bTuple = ("John", "Doe")     // tuples
-
 
 // Return multiple values (tuples)
 func getValues() -> (num: Int, str: String) {
@@ -24,11 +23,11 @@ func getValues() -> (num: Int, str: String) {
 
 let retValues = getValues()
 // Using labels
-print(retValues.num)
-print(retValues.str)
+print("Tuple.num: \(retValues.num)")
+print("Tuple.str: \(retValues.str)")
 // Using index
-print(retValues.0)
-print(retValues.1)
+print("Tuple.0: \(retValues.0)")
+print("Tuple.1: \(retValues.1)")
 print("-- Tuples --\n")
 
 // Optionals
@@ -46,7 +45,7 @@ print("-- Optionals --\n")
 print("\n-- Closures --")
 func aTest(str: String, callback: (Int, Int) -> Int) {
      let result = callback(4, 4)
-     print("result from callback: \(result)")
+     print("Result from callback closure: \(result)")
 }
 
 // Passing a closure as a parameter
@@ -64,15 +63,14 @@ class MyClass<A> {
      }
 
      func doOperation(anotherItem: A) {
-          print(anotherItem)
+        print("doOperation: \(anotherItem)")
      }
 
      func printTypeForA() {
           let aMirror = Mirror(reflecting: item)
-          print(aMirror)
+          print("\(aMirror) : \(item)")
      }
 }
-
 
 let myClassIntance1 = MyClass(item: "A String")
 myClassIntance1.printTypeForA()
