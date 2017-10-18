@@ -15,6 +15,7 @@ print("aTuple: \(aTuple)")
 firstName = aTuple.firstName
 print("Tuple.firstName: \(firstName)")
 let bTuple = ("John", "Doe")     // tuples
+print("bTuple: \(bTuple)")
 
 // Return multiple values (tuples)
 func getValues() -> (num: Int, str: String) {
@@ -45,8 +46,8 @@ print("-- Optionals --\n")
 print("\n-- Closures --")
 func aTest(str: String, callback: (Int, Int) -> Int) {
     print("str: \(str)")
-     let result = callback(4, 4)
-     print("Result from callback closure: \(result)")
+    let result = callback(4, 4)
+    print("Result from callback closure: \(result)")
 }
 
 // Passing a closure as a parameter
