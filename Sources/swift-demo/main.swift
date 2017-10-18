@@ -35,7 +35,7 @@ print("-- Tuples --\n")
 print("\n-- Optionals --")
 var age: Int?     // optional
 age = 100
-//let _ = age + 5
+//let _ = age + 5 //error
 if let age = age {
     let _ = age + 5
     print("Age has a value: \(age)")
@@ -79,6 +79,7 @@ class MyClass<A> {
 let myClassIntance1 = MyClass(item: "A String")
 myClassIntance1.printTypeForA()
 myClassIntance1.doOperation(anotherItem: "Another string")
+//myClassIntance1.doOperation(anotherItem: 5) //error
 
 let myClassIntance2 = MyClass(item: 1)
 myClassIntance2.printTypeForA()
