@@ -35,6 +35,7 @@ print("-- Tuples --\n")
 print("\n-- Optionals --")
 var age: Int?     // optional
 age = 100
+//let _ = age + 5
 if let age = age {
     let _ = age + 5
     print("Age has a value: \(age)")
