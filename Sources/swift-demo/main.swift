@@ -36,7 +36,8 @@ print("\n-- Optionals --")
 var age: Int?     // optional
 age = 100
 if let age = age {
-     print("Age has a value: \(age)")
+    let _ = age + 5
+    print("Age has a value: \(age)")
 } else {
      print("No value for age!")
 }
