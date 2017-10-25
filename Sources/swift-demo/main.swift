@@ -6,6 +6,7 @@ var firstName = "John"
 print("Hello \(firstName)!")
 var lastName: String = "Doe"
 print("Hello \(lastName)!")
+//firstName = 6
 print("-- Type inference --\n")
 
 // Tuples
